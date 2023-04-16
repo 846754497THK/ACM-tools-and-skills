@@ -1,0 +1,80 @@
+#include<stdio.h>
+#include<iostream>
+#include<algorithm>
+#include<cmath>
+#include<string>
+#include<fstream>
+#include<vector>
+#include<set>
+#include<map>
+#include<cstdlib>
+#include<cstring>
+#include<stack>
+#include<queue>
+#include<bitset>
+#include<utility>
+#include<iomanip>
+#include<bits/stdc++.h>
+using namespace std;
+typedef long long ll;
+const int INF=0x3f3f3f3f;
+const long long mod=1000000007;
+#define CK cout<<"OK\n";
+int main(){
+	ifstream cin("input1.txt");
+	ofstream cout("output1.txt");
+	freopen("input1.txt","r",stdin);
+	freopen("output1.txt","w",stdout);
+
+freopen(“CON”,“r”,stdin); //切换到从控制台输入
+}
+
+memset(c,0,sizeof(c));
+scanf("%d",&a); printf("%d",a);
+#define MAXTIME 1000
+#define max(x,y) (x)>(y)?(x):(y); 		//(注意优先级）
+typedef long long LL;
+
+#include<cstdlib>#include<time>
+    srand(int(time(0)));
+    for(int i=0;i<100;i++){
+        out<<rand()<<" ";
+    }
+
+switch(y){
+	case 0:a=0;b=0;break;
+	case 1:a=0;b=1;c--;break;//5 
+	case 2:a=1;b=0;c--;break;//6
+	case 3:a=1;b=1;c-=2;break; //5 6
+}
+优先队列大的在前
+sort 默认小的在前
+struct s{
+	int a;
+	friend bool operator<(s x,s y){
+		return x.a<y.a;
+	}
+}
+
+
+优先队列
+struct node{
+	int a;
+	node(int x=0):a(x){};
+	friend bool operator<(const node &x,const node &y ){
+		return x.a<y.a;
+	}
+};
+int main(){
+	priority_queue<node>q;				//默认大的在前面 
+	for(int i=1;i<8;i++){
+		q.push(node(2*i));
+	}
+	while(!q.empty()){
+		node t=q.top();
+		q.pop();
+		printf("%d\n",t.a);
+	}
+	
+	return 0;
+}
